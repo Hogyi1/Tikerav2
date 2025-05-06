@@ -1,0 +1,124 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar dizájn */
+.navbar {
+  border: none;
+  background: linear-gradient(90deg, #ffffff 0%, #f1f1f1 100%);
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #0d6efd !important;
+  text-decoration: none;
+}
+
+.navbar-brand:hover {
+  text-shadow: 0 0 4px #0d6efd66;
+}
+
+.day-tab-button {
+  margin: 0 0.25rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: #e9ecef;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+.day-tab-button.active,
+.day-tab-button:hover {
+  background-color: #0d6efd;
+  color: white;
+}
+
+/* További alap dizájn */
+.card {
+  padding: 2em;
+  background-color: #fff;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1rem;
+}
+
+.read-the-docs {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+body {
+  background-color: #f5f7fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* Card spacing */
+.card {
+  border-radius: 0.75rem;
+  border: none;
+}
+
+/* Seatmap container */
+.seatmap {
+  justify-content: center;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  .seatmap {
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  }
+}
